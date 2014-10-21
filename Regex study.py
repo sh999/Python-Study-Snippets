@@ -1,9 +1,9 @@
 '''
 Regex study.py
-Reference:
 
-Objective:
-Display all meta/control characters
+Print all meta/control characters
+
+References:
 '''
 import re
 

@@ -1,0 +1,21 @@
+DEBUG:root:First message in log file
+INFO:root:Printing an info
+INFO:root:Printing an info
+DEBUG:root:First message in log file...
+INFO:root:Printing an info..
+DEBUG:root:First message in log file...
+INFO:root:
+Printing an info..
+DEBUG:root:First message in log file...
+INFO:root:Printing an info..
+DEBUG:root:Printing a log message of debug level
+INFO:root:Printing a log message of info level
+DEBUG:root:Printing a log message of debug level
+INFO:root:Printing a log message of info level
+INFO:root:Printing another log message of info level after setting new level
+DEBUG:root:Printing a log message of debug level
+INFO:root:Printing a log message of info level
+DEBUG:root:printing a long message of debug level-2nd time
+INFO:root:Printing another log message of info level-2nd time
+INFO:root:Printing a log message of info level
+INFO:root:Printing a log message of info level

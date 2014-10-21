@@ -1,0 +1,7 @@
+DEBUG:root:This should go to log file
+DEBUG:root:This should go to log file2
+DEBUG:root:This should go to log file2
+DEBUG:root:3rd
+DEBUG:root:This should go to log file3
+DEBUG:root:This should go to log file4
+DEBUG:root:This should go to log file!!!

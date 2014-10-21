@@ -1,5 +1,5 @@
 '''
-Biopython study.py
+Biopyth on study.py
 Based on http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec12
 Given: Fasta file
 Output: Complete sequence record, its object representation, and length of sequence
