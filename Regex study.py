@@ -1,21 +1,24 @@
 '''
 Regex study.py
 
-Print all meta/control characters
+Tasks:
+======
+Define a pattern object
+Define a match object by comparing a string to the pattern object
+Print the matched string
 
 References:
+===========
+https://docs.python.org/2/howto/regex.html
 '''
 import re
 
-print "Metacharacters = ( + ? . * ^ $ () [] {} | \\"
-reference = "My name is Tom"
-str = 'an example word:cat!!'
+def matching():
+	patternObj = re.compile('[a-z]+') # Creates Pattern object
+	matchObj = patternObj.match('hello') # Creates Match object
+	print "Pattern object =",patternObj
+	print "Match object =",matchObj
+	matchObj.group()
+	print "Matched string =",matchObj.group()
 
-match = re.search(r'word:www', str)
-
-# If-statement after search() tests if it succeeded
-if match:                      
-	print 'found', match.group() ## 'found word:cat'
-
-else:
-	print 'did not find'
+matching()
