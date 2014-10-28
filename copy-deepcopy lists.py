@@ -1,10 +1,16 @@
 '''
 copy-deepcopy lists.py
 Study of the different methods to copy lists
-Create a list
-Create another list, equaling the above
-Print both lists
-Change an element in list 2; what happened to list 1?
+Tasks:
+======
+
+Simple copy list
+	Create a list
+	Create another list, equaling the above
+	Print both lists
+	Change an element in list 2; what happened to list 1?
+Better copy:
+	Copy a list from existing list where changing the second list won't affect the first
 
 Reference:
 http://www.python-course.eu/deep_copy.php
