@@ -11,7 +11,7 @@ Use map to do this operation to elements of the list
 Multiple maps:
 Create two lists
 Create a function that does operation on two lists
-Use map to execute funciton on two lists
+Use map to execute function on two lists
 
 Merging lists:
 Take two lists above and merge them using map
@@ -31,4 +31,4 @@ c = [7,8,9]
 result2 = map(square,b,c)
 print "\nb =",b,"and c=",c,"\nmap(b,c) =",result2
 print "Merged b and c using map =",map(None,b,c)
-print "Merged a and b using zip =",zip(a,b)
+print "Merged a and b using zip =",zip(a,b) # Length is the shortest list between the merged lists

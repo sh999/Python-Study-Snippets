@@ -1,5 +1,7 @@
 '''
-function arguments.py
+func_args.py
+Function arguments study
+
 Tasks:
 ======
 Pass keyword arguments in a function call using an identifier
