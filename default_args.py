@@ -1,8 +1,10 @@
 '''
 default_args.py
+
 Task:
+=====
 Utilize default keywords for a function with an immutable type (number, string, etc.)
-Utilize default keywords with a mutable object (list, dictionary, etc.)
+Utilize default keywords with a mutable object (e.g. list, dictionary, etc.)
 	For example, define a function with an empty list and 
 	What's the difference?
 Reference:

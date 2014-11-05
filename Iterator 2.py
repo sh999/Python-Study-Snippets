@@ -1,18 +1,21 @@
 '''
 Iterator 2.py
+Reference = http://anandology.com/python-practice-book/iterators.html
 '''
 
-str = "formidable"
+class myIterator:
+	def __init__(self, n):
+		self.i = 0
+		self.n = n
+	def __iter__(self):
+		return self
+	def __next__(self):
+		if self.i < self.n:
+			i = self.i
+			sel.i += 1
+			return i
+		else:
+			raise StopIteration()
 
-for i in str:
-   print i,
-
-print
-
-it = iter(str)
-
-print it.next()
-print it.next()
-print it.next()
-
-print list(it)
+a = myIterator(5)
+a.next() 
