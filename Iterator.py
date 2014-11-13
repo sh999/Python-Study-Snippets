@@ -4,7 +4,7 @@ Iterator 2.py
 
 str = "Hello"
 
-for i in str: # String objects can be for-looped, so it is an iterable
+for i in str: # String objects can be iterated through for, therefore it's an iterable
    print i,
 
 print
