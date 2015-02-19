@@ -17,7 +17,7 @@ import re
 
 def createMatch():
 	patternObj = re.compile('h\w*') # Creates Pattern object
-	matchObj = patternObj.match('hxexlxlxo') # Creates Match object using match()
+	matchObj = patternObj.match('haha') # Creates Match object using match()
 	# matchObj2 = patternObj.search('grey') # Match object using search()
 	matchObj.group()
 	print "Matched string =",matchObj.group() # Match searches match from beginning of pattern
