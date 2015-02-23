@@ -5,7 +5,7 @@ References
 https://www.python.org/doc/essays/graphs/
 '''
 #Implement graph with dictionary; key is node, and value is a list of subsequent nodes emanating from key node
-def find_path(graph, start, end, path=[]):
+def find_path(graph, start, end, path=[]): #Default value for path only assigned if argument wasn't passed with a value
 	path = path + [start]
 	if start == end:
 		return path
