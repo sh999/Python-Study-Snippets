@@ -1,0 +1,44 @@
+'''
+Descended from Message Passing.py
+'''
+class Wrapper: 
+	def __init__(self, obj1, obj2):
+		self.obj1 = obj1
+		self.obj2 = obj2
+	def connect(self):
+		self.obj2.move()
+
+class Event:
+	def __init__(self):
+		self.situation = False
+		self.wrapper = wrapper
+		self.offset = 0
+	def turnOn(self):
+		self.situation = True
+		self.offset = 5
+		print "Event turned on"
+	def update(self):
+		if self.situation:
+			print "Event happened, initiating change"
+		else:
+			print "Event did not happen"
+	
+
+class Target:
+	def __init__(self):
+		self.x = 0;
+	def update(self):
+		print "X = ", self.x
+	def move(self):
+		self.x += 1
+
+def main():
+	event1 = Event()
+	target1 = Target()
+	wrapper = Wrapper(event1, target1)
+	wrapper.connect(event1, event2)
+
+main()
+
+
+		

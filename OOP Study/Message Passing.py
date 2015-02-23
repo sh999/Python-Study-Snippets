@@ -3,6 +3,9 @@ Create two objects, event and target.
 Event sends a message to target to change a variable in target
 Remember to adhere to encapsulation and information hiding
 
+Notes:
+In this example, event calls method of target directly
+
 todo:
 Currently, event instance is created with argument of the target object that will be changed
 Expand so that a container object contains both event and target and decide if this is a better construct
