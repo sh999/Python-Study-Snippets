@@ -9,21 +9,21 @@ Have the capability to print out the database.
 
 todo:
 Modify so that adding a second user doesn't overwrite the information for the first user
-	Currently, updating the dictionary erases the original information. Done 150317.
+	Currently, updating the dictionary erases the original information. Done 150317: Users are put as list of objects, not dictionaries
+Add removal function
+	Done 150318 crudely; user can be deleted from list but the ID is not yet recalculated
+Recalculate ID after deletion
 '''
 
 class Database():
 	def __init__(self):
-		self.userDict = {}
 		self.userList = []
-
 	
 	def insertItem(self, user):
 		self.userList.append(user)
-		# self.userList.append({"ID # = ":user.ID, "Name = ":user.name, "Age = ":user.age, "Phone # = ":user.phone})
 	
-	def deleteItem(self):
-		pass
+	def deleteItem(self, user):
+		self.userList[:] = [person for person in self.userList if person.name != user.name] # See Martelli's answer at http://stackoverflow.com/questions/1207406/remove-items-from-a-list-while-iterating-in-python
 
 	def disp(self):
 		print "ID \t Name \t Age \t Phone number"
@@ -50,9 +50,13 @@ class IncrTest():
 def main():
 	user1 = Person("Bob", 33, "123-4567")
 	user2 = Person("Alice", 44, "222-2212")
+	user3 = Person("Spongebob", 13, "230-2201")
 	database = Database()
 	database.insertItem(user1)
 	database.insertItem(user2)
+	database.insertItem(user3)
+	database.disp()
+	database.deleteItem(user2)
 	database.disp()
 
 main()
