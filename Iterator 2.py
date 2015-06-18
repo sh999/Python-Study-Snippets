@@ -7,15 +7,16 @@ class myIterator:
 	def __init__(self, n):
 		self.i = 0
 		self.n = n
-	def __iter__(self):
+	def __iter__(self):	#	iter() always returns an iterator; you can return the object itself, like in here 
 		return self
-	def __next__(self):
+	def next(self):
 		if self.i < self.n:
 			i = self.i
-			sel.i += 1
+			self.i += 1
 			return i
 		else:
 			raise StopIteration()
 
 a = myIterator(5)
-a.next() 
+# print a.next() 
+print a
